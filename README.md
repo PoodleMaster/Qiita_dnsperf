@@ -17,7 +17,7 @@ dnsperfを動作させるため各種インストールします。
 ## ■ Download
 本ツール類をダウンロードして適当なフォルダに配置します。
 ```sh:Ubuntu
-git clone https://github.com/PoodleMaster/Qiita_dnsperf
+> git clone https://github.com/PoodleMaster/Qiita_dnsperf
 ```
 
 ## ■ Setting
@@ -42,7 +42,7 @@ DNSクエリを1000qpsで負荷をかけていきます。
 パラメータ等を変更する場合は、「`dnsperf.sh`」にある「`dnsperfコマンド`」のオプション等を変更してください。
 本ツールでは、`dnsperfコマンド`を以下で実行しています。
 ```sh:dnsperf
-dnsperf -s "$dns_server" -d dns_queries.txt -q 1000 -Q 1000 -S 1 -l 60
+> dnsperf -s "$dns_server" -d dns_queries.txt -q 1000 -Q 1000 -S 1 -l 60
 ```
 
 ```txt:
@@ -76,7 +76,7 @@ DNSクエリを1500qpsまで徐々に負荷をかけていきます。
 パラメータ等を変更する場合は、「`resperf.sh`」にある「`resperfコマンド`」のオプション等を変更してください。
 本ツールでは、`resperfコマンド`を以下で実行しています。
 ```sh:resperf
-resperf -s "$dns_server" -d dns_queries.txt -r 60 -m 1500 -P resperf_result.txt
+> resperf -s "$dns_server" -d dns_queries.txt -r 60 -m 1500 -P resperf_result.txt
 ```
 
 ```txt:
