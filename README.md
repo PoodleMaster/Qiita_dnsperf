@@ -31,7 +31,7 @@ dnsperfを動作させるため各種インストールします。
 ## ■ Exec
 本ツール類を実行します。<BR>
 
-> ※本ツール内からdnsperfやresperfを実行します。またgnuplotを用いて自動的にグラフ化します。
+> ※本ツール内から `dnsperf` や `resperf` を実行します。また `gnuplot` を用いて自動的にグラフ化します。
 
 ### ❖ dnsperfの実行
 DNSクエリを1000qpsで負荷をかけていきます。
@@ -40,10 +40,11 @@ DNSクエリを1000qpsで負荷をかけていきます。
 ```
 <BR>
 
-パラメータ等を変更する場合は、「`dnsperf.sh`」にある「`dnsperfコマンド`」のオプション等を変更してください。
-本ツールでは、`dnsperfコマンド`を以下で実行しています。
+パラメータ等を変更する場合は、`dnsperf.sh` にある `dnsperfコマンド` のオプション等を変更してください。
+
+本ツールでは、`dnsperfコマンド` を以下で実行しています。
 ```sh:dnsperf
-> dnsperf -s "$dns_server" -d dns_queries.txt -q 1000 -Q 1000 -S 1 -l 60
+dnsperf -s "$dns_server" -d dns_queries.txt -q 1000 -Q 1000 -S 1 -l 60
 ```
 
 ```txt:
@@ -56,7 +57,9 @@ DNSクエリを1000qpsで負荷をかけていきます。
 ```
 <BR>
 
-取得データは、以下の3つです。それぞれ実行した日時を付けてコピーされるので、何回実行してもログとして残るようになっています。
+取得データは、以下の3つです。
+
+それぞれ実行した日時を付けてコピーされるので、何回実行してもログとして残るようになっています。
 * dnsperf_result.txt
 * dnsperf_result_simple.txt
 * dnsperf-dns_performance_qps.pdf
@@ -74,10 +77,11 @@ DNSクエリを1500qpsまで徐々に負荷をかけていきます。
 ```
 <BR>
 
-パラメータ等を変更する場合は、「`resperf.sh`」にある「`resperfコマンド`」のオプション等を変更してください。
-本ツールでは、`resperfコマンド`を以下で実行しています。
+パラメータ等を変更する場合は、 `resperf.sh` にある `resperfコマンド` のオプション等を変更してください。
+
+本ツールでは、`resperfコマンド` を以下で実行しています。
 ```sh:resperf
-> resperf -s "$dns_server" -d dns_queries.txt -r 60 -m 1500 -P resperf_result.txt
+resperf -s "$dns_server" -d dns_queries.txt -r 60 -m 1500 -P resperf_result.txt
 ```
 
 ```txt:
@@ -89,7 +93,9 @@ DNSクエリを1500qpsまで徐々に負荷をかけていきます。
 ```
 <BR>
 
-取得データは、以下の4つです。それぞれ実行した日時を付けてコピーされるので、何回実行してもログとして残るようになっています。
+取得データは、以下の4つです。
+
+それぞれ実行した日時を付けてコピーされるので、何回実行してもログとして残るようになっています。
 * resperf_result.txt
 * resperf_result_dashbord.txt
 * resperf-dns_performance_AverageLatency.pdf
