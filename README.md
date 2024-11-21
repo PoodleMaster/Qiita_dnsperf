@@ -50,7 +50,7 @@ dnsperf -s "$dns_server" -d dns_queries.txt -q 1000 -Q 1000 -S 1 -l 60
 ```
 
 ```txt:
--s "192.168.10.1" : DNSサーバの指定
+-s "$dns_server" : DNSサーバ（192.168.10.1）の指定
 -d dns_queries.txt : 送信するDNSクエリの指定
 -q 1000 : 同時に送信できる未処理クエリの最大数を1000に設定
 -Q 1000 : クエリ送信レートの上限を1000QPSに設定
@@ -86,7 +86,7 @@ resperf -s "$dns_server" -d dns_queries.txt -r 60 -m 1500 -P resperf_result.txt
 ```
 
 ```txt:
--s "192.168.10.1" : DNSサーバの指定
+-s "$dns_server" : DNSサーバ（192.168.10.1）の指定
 -d dns_queries.txt : 送信するDNSクエリの指定
 -r 60 : ランプアップ時間（60秒）
 -m 1500 : 1秒あたりの最大クエリ数（1500クエリ）
