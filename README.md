@@ -16,7 +16,9 @@
 ```
 
 ## ■ Download
-本ツール類をダウンロードして適当なフォルダに配置します。
+本ツールを配置する適当なディレクトリに移動して、以下のコマンドを実行してツールをダウンロードします。
+
+ダウンロードが完了すると`Qiita_dnsperf`というディレクトリが作成され、その中にツールが入っています。
 ```sh:Ubuntu
 > git clone https://github.com/PoodleMaster/Qiita_dnsperf
 ```
