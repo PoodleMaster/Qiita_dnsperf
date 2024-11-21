@@ -57,12 +57,12 @@ dnsperf -s "$dns_server" -d dns_queries.txt -q 1000 -Q 1000 -S 1 -l 60
 ```
 <BR>
 
-取得データは、以下の3つです。
+取得するログデータ、グラフは、以下の3つです。
 * dnsperf_result.txt
 * dnsperf_result_simple.txt
 * dnsperf-dns_performance_qps.pdf
-<BR>
-それぞれ実行した日時を付けてコピーされるので、何回実行してもログとして残るようになっています。
+
+それぞれのログファイル名に実行した日時を付けてコピー／保存を行いますので、立て続けに何回実行しても、いつのログなのか分かるようになっています。
 
 例）以下のようにコピーされます。
 * dnsperf_result_20241121_101531.txt
@@ -97,8 +97,8 @@ resperf -s "$dns_server" -d dns_queries.txt -r 60 -m 1500 -P resperf_result.txt
 * resperf_result_dashbord.txt
 * resperf-dns_performance_AverageLatency.pdf
 * resperf-dns_performance_qps.pdf
-<BR>
-それぞれ実行した日時を付けてコピーされるので、何回実行してもログとして残るようになっています。
+
+それぞれのログファイル名に実行した日時を付けてコピー／保存を行いますので、立て続けに何回実行しても、いつのログなのか分かるようになっています。
 
 例）以下のようにコピーされます。
 * resperf_result_20241121_101729.txt
