@@ -1,5 +1,5 @@
 # dnsperfでの遊び方
-`dnsperf` と `gnuplot` を用いて、遊ぶ方法を記載します。
+`dnsperf` と `gnuplot` を用いて、ログ取得とグラフの作成をするツールになっています。
 
 実行環境は、`Ubuntu 22.04.5 LTS` です。
 
