@@ -1,6 +1,6 @@
 # dnsperfでの遊び方
 `dnsperf` と `gnuplot` を用いて、遊ぶ方法を記載します。
-![image](https://github.com/user-attachments/assets/affdcfba-d2b3-41f5-81df-1b2f193d8951)
+![image](https://github.com/user-attachments/assets/1c847120-e3fb-4ae1-967d-b8595d2dbaba)
 
 ## ■ Install
 dnsperfを動作させるため各種インストールします。
