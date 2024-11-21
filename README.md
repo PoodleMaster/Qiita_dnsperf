@@ -33,14 +33,14 @@ dnsperfを動作させるため各種インストールします。
 
 ※本ツール内から `dnsperf` や `resperf` を実行します。また `gnuplot` を用いて自動的にグラフ化します。
 
-### ❖ dnsperfの実行
-DNSクエリを1000qpsで負荷をかけていきます。
+### (１) dnsperfの実行
+**DNSクエリを1000qpsで負荷をかけていきます。**
 ```sh:Ubuntu
 > dnsperf.sh
 ```
 <BR>
 
-パラメータ等を変更する場合は、`dnsperf.sh` を変更してください。
+🟥パラメータ等を変更する場合は、`dnsperf.sh` を変更してください。
 
 本ツールでは、`dnsperfコマンド` を以下で実行しています。
 ```sh:dnsperf
@@ -69,14 +69,14 @@ dnsperf -s "$dns_server" -d dns_queries.txt -q 1000 -Q 1000 -S 1 -l 60
 * dnsperf_result_simple_20241121_101531.txt
 * dnsperf-dns_performance_qps_20241121_101531.pdf
   
-### ❖ resperfの実行
-DNSクエリを1500qpsまで徐々に負荷をかけていきます。
+### (２) resperfの実行
+**DNSクエリを1500qpsまで徐々に負荷をかけていきます。**
 ```sh:Ubuntu
 > resperf.sh
 ```
 <BR>
 
-パラメータ等を変更する場合は、 `resperf.sh` を変更してください。
+🟥パラメータ等を変更する場合は、 `resperf.sh` を変更してください。
 
 本ツールでは、`resperfコマンド` を以下で実行しています。
 ```sh:resperf
@@ -108,9 +108,9 @@ resperf -s "$dns_server" -d dns_queries.txt -r 60 -m 1500 -P resperf_result.txt
 
 ## ■ 実行結果（サンプル）
 
-### ❖ dnsperf実行結果
+### (１) dnsperf実行結果
 ![dns_performance](https://github.com/user-attachments/assets/f436a7af-e586-4c12-ac87-cb7d86901290)
 
-### ❖ resperf実行結果
+### (２) resperf実行結果
 ![dns_performance](https://github.com/user-attachments/assets/00796ac2-c3a6-44fc-9a15-b0071b9d82f1)
 ![dns_performance_AverageLatency](https://github.com/user-attachments/assets/a2b83c6e-d3ed-4b2c-b72c-49b25f2a1f68)
