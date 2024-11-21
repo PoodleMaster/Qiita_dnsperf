@@ -6,7 +6,7 @@
 ![image](https://github.com/user-attachments/assets/ce0a5bfd-1c45-4398-8346-60d2776b08d5)
 
 ## ■ Install
-`dnsperf` を動作させるため各種インストールします。
+`dnsperf`、`gnuplot` を動作させるため各種インストールします。
 ```sh:Ubuntu
 > sudo apt update
 > sudo apt upgrade
