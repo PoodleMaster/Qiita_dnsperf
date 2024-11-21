@@ -1,5 +1,5 @@
 # dnsperfでの遊び方
-**本ツールは、`dnsperf`、`resperf`、`gnuplot` を用いて、ログ取得とグラフ作成を自動化するツールです。**
+**本ツールは、`dnsperf`、`resperf`、`gnuplot` を用いて、DNSスループットのログ取得とグラフ作成を自動化するツールです。**
 
 実行環境は、`Ubuntu 22.04.5 LTS` です。
 
