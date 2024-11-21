@@ -2,7 +2,7 @@
 `dnsperf` と `gnuplot` を用いて、遊ぶ方法を記載します。
 ![image](https://github.com/user-attachments/assets/1c847120-e3fb-4ae1-967d-b8595d2dbaba)
 
-実行環境は、Ubuntuとしています。
+実行環境は、`Ubuntu 22.04.5 LTS` です。
 
 ## ■ Install
 dnsperfを動作させるため各種インストールします。
