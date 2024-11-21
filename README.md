@@ -51,7 +51,19 @@ dnsperf -s "$dns_server" -d dns_queries.txt -q 1000 -Q 1000 -S 1 -l 60
 -S 1 : 1秒あたりのクエリ数（QPS）統計を1秒ごとに出力
 -l 60 : 実行時間の上限（60秒）
 ```
+<BR>
 
+取得データは、以下の3つです。それぞれ実行した日時を付けてコピーされるので、何回実行してもログとして残るようになっています。
+* dnsperf_result.txt
+* dnsperf_result_simple.txt
+* dnsperf-dns_performance_qps.pdf
+<BR>
+
+例）以下のようにコピーされます。
+* dnsperf_result_20241121_101531.txt
+* dnsperf_result_simple_20241121_101531.txt
+* dnsperf-dns_performance_qps_20241121_101531.pdf
+  
 ### ❖ resperfの実行
 DNSクエリを1500qpsまで徐々に負荷をかけていきます。
 ```sh:Ubuntu
@@ -72,6 +84,20 @@ resperf -s "$dns_server" -d dns_queries.txt -r 60 -m 1500 -P resperf_result.txt
 -m 1500 : 1秒あたりの最大クエリ数（1500クエリ）
 -P resperf_result.txt : プロットデータファイルの名前
 ```
+<BR>
+
+取得データは、以下の4つです。それぞれ実行した日時を付けてコピーされるので、何回実行してもログとして残るようになっています。
+* resperf_result.txt
+* resperf_result_dashbord.txt
+* resperf-dns_performance_AverageLatency.pdf
+* resperf-dns_performance_qps.pdf
+<BR>
+
+例）以下のようにコピーされます。
+* resperf_result_20241121_101729.txt
+* resperf_result_dashbord_20241121_101729.txt
+* resperf-dns_performance_AverageLatency_20241121_101729.pdf
+* resperf-dns_performance_qps_20241121_101729.pdf
 
 ## ■ 実行結果（サンプル）
 
