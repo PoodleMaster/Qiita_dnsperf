@@ -64,10 +64,10 @@ dnsperf -s "$dns_server" -d dns_queries.txt -q 1000 -Q 1000 -S 1 -l 60
 
 それぞれのログファイル名に実行した日時を付けてコピー／保存を行いますので、立て続けに何回実行しても、いつのログなのか分かるようになっています。
 
-例）以下のようにコピーされます。
-* dnsperf_result_20241121_101531.txt
-* dnsperf_result_simple_20241121_101531.txt
-* dnsperf-dns_performance_qps_20241121_101531.pdf
+> 例）以下のようにコピーされます。
+> * dnsperf_result_20241121_101531.txt
+> * dnsperf_result_simple_20241121_101531.txt
+> * dnsperf-dns_performance_qps_20241121_101531.pdf
   
 ### (２) resperfの実行
 **DNSクエリを1500qpsまで徐々に負荷をかけていきます。**
@@ -100,11 +100,11 @@ resperf -s "$dns_server" -d dns_queries.txt -r 60 -m 1500 -P resperf_result.txt
 
 それぞれのログファイル名に実行した日時を付けてコピー／保存を行いますので、立て続けに何回実行しても、いつのログなのか分かるようになっています。
 
-例）以下のようにコピーされます。
-* resperf_result_20241121_101729.txt
-* resperf_result_dashbord_20241121_101729.txt
-* resperf-dns_performance_AverageLatency_20241121_101729.pdf
-* resperf-dns_performance_qps_20241121_101729.pdf
+> 例）以下のようにコピーされます。
+> * resperf_result_20241121_101729.txt
+> * resperf_result_dashbord_20241121_101729.txt
+> * resperf-dns_performance_AverageLatency_20241121_101729.pdf
+> * resperf-dns_performance_qps_20241121_101729.pdf
 
 ## ■ 実行結果（サンプル）
 
