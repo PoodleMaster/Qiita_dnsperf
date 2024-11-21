@@ -40,7 +40,7 @@ dnsperfを動作させるため各種インストールします。
 ```
 <BR>
 
-🟥パラメータ等を変更する場合は、`dnsperf.sh` を変更してください。
+👉️パラメータ等を変更する場合は、`dnsperf.sh` を変更してください。
 
 本ツールでは、`dnsperfコマンド` を以下で実行しています。
 ```sh:dnsperf
@@ -76,7 +76,7 @@ dnsperf -s "$dns_server" -d dns_queries.txt -q 1000 -Q 1000 -S 1 -l 60
 ```
 <BR>
 
-🟥パラメータ等を変更する場合は、 `resperf.sh` を変更してください。
+👉️パラメータ等を変更する場合は、 `resperf.sh` を変更してください。
 
 本ツールでは、`resperfコマンド` を以下で実行しています。
 ```sh:resperf
